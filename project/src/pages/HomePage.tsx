@@ -92,27 +92,7 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Featured Products */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900">Featured Products</h2>
-            <Link 
-              to="/compare" 
-              className="text-indigo-600 hover:text-indigo-800 font-medium flex items-center"
-            >
-              View all products
-              <ArrowRight size={16} className="ml-1" />
-            </Link>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {featuredProducts.map(product => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Stats Section */}
       <section className="py-16 bg-gradient-to-r from-indigo-900 to-indigo-800 text-white">

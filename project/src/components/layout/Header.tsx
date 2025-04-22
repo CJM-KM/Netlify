@@ -64,15 +64,15 @@ const Header: React.FC = () => {
               Compare
             </Link>
             <Link 
-              to="/admin" 
+              to="/reviews" 
               className={`font-medium transition-colors duration-200 ${
-                isActive('/admin') ? 'text-indigo-900' : 'text-gray-600 hover:text-indigo-900'
+                isActive('/reviews') ? 'text-indigo-900' : 'text-gray-600 hover:text-indigo-900'
               }`}
             >
-              Admin
+            Reviews
             </Link>
             <Link 
-              to="/profile" 
+              to="/login" 
               className="ml-4 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200"
             >
               <User size={20} className="text-gray-700" />
@@ -126,16 +126,16 @@ const Header: React.FC = () => {
               Compare
             </Link>
             <Link 
-              to="/admin" 
+              to="/reviews" 
               className={`px-4 py-2 rounded-md ${
-                isActive('/admin') ? 'bg-indigo-50 text-indigo-900' : 'text-gray-700'
+                isActive('/reviews') ? 'bg-indigo-50 text-indigo-900' : 'text-gray-700'
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Admin
+              Review
             </Link>
             <Link 
-              to="/profile" 
+              to="/login" 
               className="flex items-center space-x-2 px-4 py-2 rounded-md text-gray-700"
               onClick={() => setIsMobileMenuOpen(false)}
             >

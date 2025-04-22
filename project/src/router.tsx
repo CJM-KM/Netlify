@@ -4,7 +4,8 @@ import HomePage from './pages/HomePage';
 import JourneyPage from './pages/JourneyPage';
 import ComparePage from './pages/ComparePage';
 import AdminPage from './pages/AdminPage';
-import NotFound from './components/layout/NotFound';
+import LoginPage from './pages/LoginPage';
+import ReviewsPage  from './pages/ReviewsPage';
 
 const router = createBrowserRouter([
   {
@@ -24,12 +25,16 @@ const router = createBrowserRouter([
         element: <ComparePage />,
       },
       {
-        path: 'admin',
-        element: <AdminPage />,
+        path: 'reviews',
+        element: <ReviewsPage />,
       },
       {
-        path: '*',
-        element: <NotFound />,
+        path: 'login',
+        element: <LoginPage />,
+      },
+      {
+        path: 'admin',
+        element: <AdminPage />,
       },
     ],
   },
